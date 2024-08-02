@@ -1,0 +1,331 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  --heading-pinkRed:#eb3678;
+}
+
+
+body {
+  background-color: rgb(7, 7, 60);
+  color: white;
+  font-family: "Poppins ", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(6, 6, 70);
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0px 23px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover {
+  color: rgb(41, 125, 185);
+  font-size: 1.2rem;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0px;
+  height: 70vh;
+  position: relative;
+}
+
+.firstSection > div {
+  width: 30%;
+}
+
+.leftsection {
+  font-size: 2.6rem;
+  height: 90%;
+}
+
+
+ .bt{
+  padding: 12px;
+  background-color: purple;
+  color: white;
+  border: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.bt:hover{
+  background-color: rgba(128, 0, 128, 0.797);
+}
+
+.rightsection img {
+  width: 80%;
+  margin: 50px 0px;
+}
+
+.purple {
+  color: rgb(130, 48, 206);
+}
+
+.buttons{
+  position: absolute;
+  bottom: -1px;
+}
+
+
+#about{
+  padding: 80px,0;
+  color: #ababab;
+  margin: auto;
+ padding-top: 70px;
+ margin-bottom: 70px;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.about-col-1{
+  flex-basis:35% ;
+
+}
+
+.about-col-1 img{
+  width: 450px;
+  margin: 15px 90px;
+  border-radius: 25px;
+  
+
+}
+
+.about-col-2{
+  flex-basis: 60%;
+  margin:17px  ;
+}
+
+.sub-title{
+  font-size: 40px;
+  font-weight: 1rem;
+  color: var(--heading-pinkRed);
+  margin-bottom: 10px;
+}
+
+.about-col-2 > p{
+  color: white;
+  line-height: 25px;
+}
+
+
+
+
+
+
+
+#element {
+  color: rgb(20, 149, 189);
+}
+
+.secondsection {
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  height: 75vh;
+}
+
+.secondsection h1 {
+  font-size: 1.9rem;
+  color: #eb3678;
+  margin-top: 10px;
+  
+}
+
+
+main hr {
+  border: 0px;
+  background-color: blueviolet;
+  height: 1.2px;
+  margin: 20px 60px;
+}
+.secondsection > span:first-child{
+    color: #6b1c39;
+}
+.secondsection .box {
+  background-color: white;
+  width: 80vw;
+  height: 2px;
+  margin: 80px 0;
+  display: flex;
+}
+
+.secondsection .vertical {
+  background-color: white;
+  height: 93px;
+  width: 1px;
+  margin: 0px 130px;
+}
+
+.image-top {
+  width: 23px;
+  position: relative;
+  top: -32px;
+  left: -9px;
+}
+
+.vertical-title {
+  position: relative;
+  top: 75px;
+  width: 150px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.vertical-desc {
+  position: relative;
+  top: 86px;
+  width: 150px;
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* My services section */
+.servicesSection {
+  width: 80vw;
+  margin: auto;
+  padding: 28px;
+  padding-top: 80px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.servicesSection > div:first-child {
+  width: 45%;
+}
+.aboutServices p {
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.serviceList {
+  border-radius: 22px;
+  width: 50%;
+  padding: 12px;
+  background-color: rgb(17, 17, 92);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.serviceBox{
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+    background-color: rgb(38, 38, 99);
+}
+
+.serviceBox:hover{
+  background-color: rgba(38, 38, 99, 0.687);
+}
+.serviceBox:first-child{
+    background-color: rgb(20, 149, 189);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2px;
+}
+
+.serviceBox:first-child .serviceIcon{
+    object-fit: fill;
+    display: block;
+
+    width: 50px;
+    border-radius: 50%;
+}
+.serviceIcon{
+    object-fit: fill;
+    display: block;
+
+    width: 50px;
+}
+
+.servicesHeading {
+  font-size: 40px;
+  color: #eb3678;
+  /* color: rgb(130, 48, 206); */
+  font-weight: bolder;
+  margin-bottom: 28px;
+}
+
+.content{
+    font-size: medium;
+    
+}
+
+.content>span{
+    font-size: medium;
+    margin-bottom: 6px;
+    display: block;
+    font-weight: bold;
+}
+.content>p{
+    font-size: smaller;
+}
+
+
+
+/* Footer section  */
+footer {
+  background-color: rgb(34, 6, 61);
+}
+
+.footer {
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer > div {
+  width: 23px;
+}
+
+footer .text-center {
+  text-align: center;
+  color: grey;
+  padding: 12px;
+}
